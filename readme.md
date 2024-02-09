@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Chrome extension allows you to save all the URLs from your open tabs into a text file. Additionally, it provides a feature to download an HTML page containing all the links from the active tab.
+This Chrome extension allows you to save all the URLs from your open tabs into a text file.
 
 ## Installation
 
@@ -26,9 +26,7 @@ This Chrome extension allows you to save all the URLs from your open tabs into a
 
 2. A popup will appear with a list of URLs from all open tabs.
 
-3. Optionally, you can enable "Auto update" to automatically update the list when you switch tabs.
-
-4. Click on the "Download Text" button to save the URLs as a text file.
+3. Click on the "Download Text" button to save the URLs as a text file.
 
 ## Contributions
 
