@@ -53,6 +53,24 @@ body {
 #download-link:hover {
     background-color: #0056b3;
 }
+#download-html-link {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+#download-html-link:hover {
+    background-color: #0056b3;
+}
 
 .feather {
     width: 24px;
