@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "TabLinksDownloader",
+    "version": "1.0",
+    "description": "Download all tab links in a HTML page",
+    "permissions": [
+        "tabs",
+        "downloads"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
