@@ -83,3 +83,24 @@ body {
     fill: none;
     vertical-align: middle;
 }
+
+
+#filename {
+    width: 320px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Filename {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
