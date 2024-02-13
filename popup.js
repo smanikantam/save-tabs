@@ -15,8 +15,16 @@ function updateTabURLs() {
 
 downloadLink.addEventListener("click", () => {
   var data = mainTextarea.value; // Can't re-run updateTabURLs() as user may have edited the text.
+  let filename1=document.getElementById("filename").value;
+  if(filename1=="")
+  {
+
   var filename = "saved-tabs_" + new Date().toISOString().replace(/:/g, "-").replace("T", "_").slice(0, 19); // Regex replaces all occurences.
-  
+  }
+  else
+  {
+    var filename = filename1;
+  }
   createDownloadFile(data, filename, "text/plain");
 });
 downloadHTMLLink.addEventListener("click", () => {
@@ -99,7 +107,15 @@ function createHTMLPage(links) {
 
 function downloadHTMLPage(links) {
   var html = createHTMLPage(links);
-  var filename = "saved-tabs_" + new Date().toISOString().replace(/:/g, "-").replace("T", "_").slice(0, 19) + ".html"; // Regex replaces all occurences.
+  let filename1=document.getElementById("filename").value;
+  if(filename1=="")
+  {
+    var filename = "saved-tabs_" + new Date().toISOString().replace(/:/g, "-").replace("T", "_").slice(0, 19) + ".html"; // Regex replaces all occurences.
+  }
+  else
+  {
+    var filename = filename1 + ".html";
+  }
 
   createDownloadHTMLFile(html, filename, "text/html");
 }
