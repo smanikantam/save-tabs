@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "TabLinksDownloader",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Download all tab links in a HTML page",
     "permissions": [
         "tabs",
