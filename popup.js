@@ -1,6 +1,7 @@
 var mainTextarea = document.getElementById("main-textarea");
 var downloadLink = document.getElementById("download-link");
 var downloadHTMLLink = document.getElementById("download-html-link");
+var copyLink = document.getElementById("copy-link");
 var tabURLs = []; // Need to refactor to not have this in public scope.
 
 function updateTabURLs() {
@@ -29,6 +30,13 @@ downloadLink.addEventListener("click", () => {
 });
 downloadHTMLLink.addEventListener("click", () => {
   downloadHTMLPage(tabURLs);
+});
+copyLink.addEventListener("click", () => {
+  navigator.clipboard.writeText(mainTextarea.value).then(() => {
+    var original = copyLink.textContent;
+    copyLink.textContent = "Copied!";
+    setTimeout(() => { copyLink.textContent = original; }, 1000);
+  });
 });
 
 function createDownloadFile(data, filename, type) {
